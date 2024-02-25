@@ -143,7 +143,7 @@ function Homepage() {
                 {/* Feature Product End */}
                 {/* Special Offer*/}
                 <section className="content-inner-2">
-                    <HomeSpecialOfferSlider/>
+                    <HomeSpecialOfferSlider />
                 </section>
                 {/* Special Offer End */}
                 {/* Testimonial */}
@@ -165,7 +165,7 @@ function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <HomeTestimonialSlider/>
+                        <HomeTestimonialSlider />
                     </div>
                 </section>
                 {/* Testimonial End */}
@@ -176,7 +176,7 @@ function Homepage() {
                             <h2 className="title">Latest News</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         </div>
-                        <HomeLatestNewsSlider/>
+                        <HomeLatestNewsSlider />
                     </div>
                 </section>
                 {/* Latest News End */}
@@ -270,9 +270,6 @@ function Homepage() {
                 </section>
                 {/* Newsletter End */}
             </div>
-            <button className="scroltop" type="button">
-                <i className="fas fa-arrow-up"></i>
-            </button>
         </div>
     );
 }
