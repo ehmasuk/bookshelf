@@ -4,7 +4,6 @@ import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { authCheck } from "../../utils/AuthCheckSlice";
-import Breadcumb from "../../components/Breadcumb";
 
 const userInfoDefault = { email: "eve.holt@reqres.in", password: "cityslicka" };
 
@@ -47,7 +46,21 @@ function Loginpage() {
 
     return (
         <div className="page-content">
-            <Breadcumb />
+            <div className="dz-bnr-inr overlay-secondary-dark dz-bnr-inr-sm" style={{ backgroundImage: "url(images/background/bg3.jpg)" }}>
+                <div className="container">
+                    <div className="dz-bnr-inr-entry">
+                        <h1>Login</h1>
+                        <nav aria-label="breadcrumb" className="breadcrumb-row">
+                            <ul className="breadcrumb">
+                                <li className="breadcrumb-item">
+                                    <Link href="/"> Home</Link>
+                                </li>
+                                <li className="breadcrumb-item">Login</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
             {/* contact area */}
             <section className="content-inner shop-account">
                 {/* Product */}

@@ -30,133 +30,136 @@ function Header() {
                     <div className="extra-nav">
                         <div className="extra-cell">
                             <ul className="navbar-nav header-right">
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/user/wishlist">
-                                        <FaRegHeart color="#000" />
-                                        <span className="badge">21</span>
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
-                                    <button type="button" className="nav-link box cart-btn" onClick={setShowCartDropdown}>
-                                        <MdOutlineShoppingCart color="#000" />
-                                        <span className="badge">5</span>
-                                    </button>
-                                    {showCartDropdown && (
-                                        <ul className="dropdown-menu cart-list d-block" onClick={(e) => e.stopPropagation()}>
-                                            <li className="cart-item">
-                                                <div className="media">
-                                                    <div className="media-left">
-                                                        <a href="books-detail.html">
-                                                            <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="media-body">
-                                                        <h6 className="dz-title">
-                                                            <a href="books-detail.html" className="media-heading">
-                                                                Real Life
-                                                            </a>
-                                                        </h6>
-                                                        <span className="dz-price">$28.00</span>
-                                                        <span className="item-close">×</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li className="cart-item">
-                                                <div className="media">
-                                                    <div className="media-left">
-                                                        <a href="books-detail.html">
-                                                            <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="media-body">
-                                                        <h6 className="dz-title">
-                                                            <a href="books-detail.html" className="media-heading">
-                                                                Home
-                                                            </a>
-                                                        </h6>
-                                                        <span className="dz-price">$28.00</span>
-                                                        <span className="item-close">×</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li className="cart-item">
-                                                <div className="media">
-                                                    <div className="media-left">
-                                                        <a href="books-detail.html">
-                                                            <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="media-body">
-                                                        <h6 className="dz-title">
-                                                            <a href="books-detail.html" className="media-heading">
-                                                                Such a fun age
-                                                            </a>
-                                                        </h6>
-                                                        <span className="dz-price">$28.00</span>
-                                                        <span className="item-close">×</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li className="cart-item text-center">
-                                                <h6 className="text-secondary">Totle = $500</h6>
-                                            </li>
-                                            <li className="text-center d-flex">
-                                                <a href="shop-cart.html" className="btn btn-sm btn-primary me-2 btnhover w-100">
-                                                    View Cart
-                                                </a>
-                                                <a href="shop-checkout.html" className="btn btn-sm btn-outline-primary btnhover w-100">
-                                                    Checkout
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    )}
-                                </li>
                                 {isLogedin && (
-                                    <li className="nav-item dropdown profile-dropdown  ms-4">
-                                        <a className="nav-link" href="#" role="button" onClick={setShowProfileDropdown}>
-                                            <img src="https://i.pravatar.cc/150?img=3" alt="/" />
-                                            <div className="profile-info">
-                                                <h6 className="title">Brian</h6>
-                                                <span>info@gmail.com</span>
-                                            </div>
-                                        </a>
+                                    <>
+                                        <li className="nav-item">
+                                            <Link className="nav-link" to="/user/wishlist">
+                                                <FaRegHeart color="#000" />
+                                                <span className="badge">21</span>
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <button type="button" className="nav-link box cart-btn" onClick={setShowCartDropdown}>
+                                                <MdOutlineShoppingCart color="#000" />
+                                                <span className="badge">5</span>
+                                            </button>
+                                            {showCartDropdown && (
+                                                <ul className="dropdown-menu cart-list d-block" onClick={(e) => e.stopPropagation()}>
+                                                    <li className="cart-item">
+                                                        <div className="media">
+                                                            <div className="media-left">
+                                                                <a href="books-detail.html">
+                                                                    <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
+                                                                </a>
+                                                            </div>
+                                                            <div className="media-body">
+                                                                <h6 className="dz-title">
+                                                                    <a href="books-detail.html" className="media-heading">
+                                                                        Real Life
+                                                                    </a>
+                                                                </h6>
+                                                                <span className="dz-price">$28.00</span>
+                                                                <span className="item-close">×</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li className="cart-item">
+                                                        <div className="media">
+                                                            <div className="media-left">
+                                                                <a href="books-detail.html">
+                                                                    <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
+                                                                </a>
+                                                            </div>
+                                                            <div className="media-body">
+                                                                <h6 className="dz-title">
+                                                                    <a href="books-detail.html" className="media-heading">
+                                                                        Home
+                                                                    </a>
+                                                                </h6>
+                                                                <span className="dz-price">$28.00</span>
+                                                                <span className="item-close">×</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li className="cart-item">
+                                                        <div className="media">
+                                                            <div className="media-left">
+                                                                <a href="books-detail.html">
+                                                                    <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
+                                                                </a>
+                                                            </div>
+                                                            <div className="media-body">
+                                                                <h6 className="dz-title">
+                                                                    <a href="books-detail.html" className="media-heading">
+                                                                        Such a fun age
+                                                                    </a>
+                                                                </h6>
+                                                                <span className="dz-price">$28.00</span>
+                                                                <span className="item-close">×</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li className="cart-item text-center">
+                                                        <h6 className="text-secondary">Totle = $500</h6>
+                                                    </li>
+                                                    <li className="text-center d-flex">
+                                                        <a href="shop-cart.html" className="btn btn-sm btn-primary me-2 btnhover w-100">
+                                                            View Cart
+                                                        </a>
+                                                        <a href="shop-checkout.html" className="btn btn-sm btn-outline-primary btnhover w-100">
+                                                            Checkout
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            )}
+                                        </li>
 
-                                        {showProfileDropdown && (
-                                            <div className="dropdown-menu py-0 show" style={{ top: "100% !important" }}>
-                                                <div className="dropdown-header">
-                                                    <h6 className="m-0">Brian</h6>
+                                        <li className="nav-item dropdown profile-dropdown  ms-4">
+                                            <a className="nav-link" href="#" role="button" onClick={setShowProfileDropdown}>
+                                                <img src="https://i.pravatar.cc/150?img=3" alt="/" />
+                                                <div className="profile-info">
+                                                    <h6 className="title">Brian</h6>
                                                     <span>info@gmail.com</span>
                                                 </div>
-                                                <div className="dropdown-body">
-                                                    <Link to="/user/profile" className="dropdown-item d-flex justify-content-between align-items-center ai-icon">
-                                                        <div>
-                                                            <FaRegUser fontSize="16px" />
+                                            </a>
 
-                                                            <span className="ms-2">Profile</span>
-                                                        </div>
-                                                    </Link>
-                                                    <Link to="/user/cart" className="dropdown-item d-flex justify-content-between align-items-center ai-icon">
-                                                        <div>
-                                                            <MdOutlineShoppingCart fontSize="18px" />
-                                                            <span className="ms-2">My Order</span>
-                                                        </div>
-                                                    </Link>
-                                                    <Link to="/user/wishlist" className="dropdown-item d-flex justify-content-between align-items-center ai-icon">
-                                                        <div>
-                                                            <FaRegHeart fontSize="17px" />
-                                                            <span className="ms-2">Wishlist</span>
-                                                        </div>
-                                                    </Link>
-                                                </div>
+                                            {showProfileDropdown && (
+                                                <div className="dropdown-menu py-0 show" style={{ top: "100% !important" }}>
+                                                    <div className="dropdown-header">
+                                                        <h6 className="m-0">Brian</h6>
+                                                        <span>info@gmail.com</span>
+                                                    </div>
+                                                    <div className="dropdown-body">
+                                                        <Link to="/user/profile" className="dropdown-item d-flex justify-content-between align-items-center ai-icon">
+                                                            <div>
+                                                                <FaRegUser fontSize="16px" />
 
-                                                <div className="dropdown-footer">
-                                                    <button className="btn btn-primary w-100 btnhover btn-sm" onClick={() => dispatch(authUncheck())}>
-                                                        Log Out
-                                                    </button>
+                                                                <span className="ms-2">Profile</span>
+                                                            </div>
+                                                        </Link>
+                                                        <Link to="/user/cart" className="dropdown-item d-flex justify-content-between align-items-center ai-icon">
+                                                            <div>
+                                                                <MdOutlineShoppingCart fontSize="18px" />
+                                                                <span className="ms-2">My Order</span>
+                                                            </div>
+                                                        </Link>
+                                                        <Link to="/user/wishlist" className="dropdown-item d-flex justify-content-between align-items-center ai-icon">
+                                                            <div>
+                                                                <FaRegHeart fontSize="17px" />
+                                                                <span className="ms-2">Wishlist</span>
+                                                            </div>
+                                                        </Link>
+                                                    </div>
+
+                                                    <div className="dropdown-footer">
+                                                        <button className="btn btn-primary w-100 btnhover btn-sm" onClick={() => dispatch(authUncheck())}>
+                                                            Log Out
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        )}
-                                    </li>
+                                            )}
+                                        </li>
+                                    </>
                                 )}
                             </ul>
                         </div>

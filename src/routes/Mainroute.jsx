@@ -10,16 +10,15 @@ import ProfilePage from "../pages/profilepage/ProfilePage";
 import ShopPage from "../pages/shoppage/ShopPage";
 import Base from "./../layouts/Base";
 import Errorpage from "./../pages/404Error/Errorpage";
+import CartPage from "./../pages/cartpage/CartPage";
 import Homepage from "./../pages/homepage/Homepage";
 import Loginpage from "./../pages/loginpage/Loginpage";
 import Registerpage from "./../pages/registerpage/Registerpage";
 import WishlistPage from "./../pages/wishlistpage/WishlistPage";
 import CheckAuth from "./CheckAuth";
-import CartPage from './../pages/cartpage/CartPage';
 
 function Mainroute() {
     const isLogedin = useSelector((allReducers) => allReducers.LoginSlice.isLogedin);
-
     return (
         <div>
             <BrowserRouter>

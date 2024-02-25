@@ -1,5 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import toast from "react-hot-toast";
+import { Navigate } from "react-router-dom";
+
+
 
 const checkLogedin = () => {
     if (localStorage.getItem("isLogedin")) {
@@ -17,9 +20,10 @@ const AuthCheckSlice = createSlice({
     },
 
     reducers: {
-        authCheck: (state) => {
+        authCheck: (state,{payload = 'Loged in'}) => {
             state.isLogedin = true;
-            toast.success("Loged in");
+            toast.success(payload);
+            <Navigate to="/" />
         },
         authUncheck: (state) => {
             localStorage.removeItem("isLogedin");
