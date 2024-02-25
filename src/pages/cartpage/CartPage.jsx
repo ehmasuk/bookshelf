@@ -50,7 +50,7 @@ function CartPage() {
                                             </td>
                                             <td className="product-item-totle">$28.00</td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                     </tbody>

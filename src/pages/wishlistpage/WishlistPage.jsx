@@ -54,7 +54,7 @@ function WishlistPage() {
                                                 </a>
                                             </td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -74,7 +74,7 @@ function WishlistPage() {
                                                 </a>
                                             </td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -94,7 +94,7 @@ function WishlistPage() {
                                                 </a>
                                             </td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -114,7 +114,7 @@ function WishlistPage() {
                                                 </a>
                                             </td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -134,7 +134,7 @@ function WishlistPage() {
                                                 </a>
                                             </td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -154,7 +154,7 @@ function WishlistPage() {
                                                 </a>
                                             </td>
                                             <td className="product-item-close">
-                                                <a href="javascript:void(0);" className="ti-close" />
+                                                <a href="#" className="ti-close" />
                                             </td>
                                         </tr>
                                     </tbody>
