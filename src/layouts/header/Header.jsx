@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
 import useDropDown from "../../hooks/useDropDown";
 import { authUncheck } from "../../utils/AuthCheckSlice";
+import { removefromCart } from "../../utils/CartSlice";
 
 function Header() {
     const dispatch = useDispatch();
@@ -14,6 +15,8 @@ function Header() {
 
     const [showProfileDropdown, setShowProfileDropdown] = useDropDown();
     const [showCartDropdown, setShowCartDropdown] = useDropDown();
+
+    const { cartItems, totalAmount } = useSelector((store) => store.CartSlice);
 
     return (
         <header className="site-header mo-left header style-1">
@@ -41,71 +44,49 @@ function Header() {
                                         <li className="nav-item">
                                             <button type="button" className="nav-link box cart-btn" onClick={setShowCartDropdown}>
                                                 <MdOutlineShoppingCart color="#000" />
-                                                <span className="badge">5</span>
+                                                <span className="badge">{cartItems.length > 0 && cartItems.length}</span>
                                             </button>
                                             {showCartDropdown && (
                                                 <ul className="dropdown-menu cart-list d-block" onClick={(e) => e.stopPropagation()}>
-                                                    <li className="cart-item">
-                                                        <div className="media">
-                                                            <div className="media-left">
-                                                                <a href="books-detail.html">
-                                                                    <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
-                                                                </a>
-                                                            </div>
-                                                            <div className="media-body">
-                                                                <h6 className="dz-title">
-                                                                    <a href="books-detail.html" className="media-heading">
-                                                                        Real Life
-                                                                    </a>
-                                                                </h6>
-                                                                <span className="dz-price">$28.00</span>
-                                                                <span className="item-close">×</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li className="cart-item">
-                                                        <div className="media">
-                                                            <div className="media-left">
-                                                                <a href="books-detail.html">
-                                                                    <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
-                                                                </a>
-                                                            </div>
-                                                            <div className="media-body">
-                                                                <h6 className="dz-title">
-                                                                    <a href="books-detail.html" className="media-heading">
-                                                                        Home
-                                                                    </a>
-                                                                </h6>
-                                                                <span className="dz-price">$28.00</span>
-                                                                <span className="item-close">×</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li className="cart-item">
-                                                        <div className="media">
-                                                            <div className="media-left">
-                                                                <a href="books-detail.html">
-                                                                    <img alt="" className="media-object" src="https://picsum.photos/500/300?random=1" />
-                                                                </a>
-                                                            </div>
-                                                            <div className="media-body">
-                                                                <h6 className="dz-title">
-                                                                    <a href="books-detail.html" className="media-heading">
-                                                                        Such a fun age
-                                                                    </a>
-                                                                </h6>
-                                                                <span className="dz-price">$28.00</span>
-                                                                <span className="item-close">×</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                    {cartItems.length > 0 ? (
+                                                        cartItems.map((item, index) => {
+                                                            return (
+                                                                <>
+                                                                    <li key={index} className="cart-item">
+                                                                        <div className="media">
+                                                                            <div className="media-left">
+                                                                                <Link to={`/shop/${item.id}`}>
+                                                                                    <img alt="" className="media-object" src={item.img_src} />
+                                                                                </Link>
+                                                                            </div>
+                                                                            <div className="media-body">
+                                                                                <h6 className="dz-title">
+                                                                                    <Link to={`/shop/${item.id}`} className="media-heading">
+                                                                                        {item.title.slice(0, 30) + "..."}
+                                                                                    </Link>
+                                                                                </h6>
+                                                                                <span className="dz-price">{item.price}</span>
+                                                                                <span onClick={() => dispatch(removefromCart(item))} className="item-close">
+                                                                                    ×
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </>
+                                                            );
+                                                        })
+                                                    ) : (
+                                                        <li className="cart-item text-center">
+                                                            <h6 className="text-secondary">Your cart is empty</h6>
+                                                        </li>
+                                                    )}
                                                     <li className="cart-item text-center">
-                                                        <h6 className="text-secondary">Totle = $500</h6>
+                                                        <h6 className="text-secondary">Total = ${totalAmount}</h6>
                                                     </li>
                                                     <li className="text-center d-flex">
-                                                        <a href="shop-cart.html" className="btn btn-sm btn-primary me-2 btnhover w-100">
+                                                        <Link to="/user/cart" className="btn btn-sm btn-primary me-2 btnhover w-100">
                                                             View Cart
-                                                        </a>
+                                                        </Link>
                                                         <a href="shop-checkout.html" className="btn btn-sm btn-outline-primary btnhover w-100">
                                                             Checkout
                                                         </a>

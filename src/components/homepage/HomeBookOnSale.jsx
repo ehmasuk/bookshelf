@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 const homeBookOnSaleSlide = [
     {
         title: "milk",
-        img: "https://picsum.photos/500/300?random=55",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmrkeffNz2vFO8s5PTN1213FH2ObwsOSWfS-40LPXRC7GG-4-K4jLi-TO4qQ7rOGIItw&usqp=CAU",
         price: "83",
         oldPrice: 162,
         rating: 4,
@@ -20,7 +20,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "cannot",
-        img: "https://picsum.photos/500/300?random=94",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbeICSmHOfxzt_H_X2xtX8hMjkOxBlRDcecdUcKxmxRdehYdv7rqjk3BMdcMYPxaxLHdo&usqp=CAU",
         price: "172",
         oldPrice: 200,
         rating: 4,
@@ -28,7 +28,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "while",
-        img: "https://picsum.photos/500/300?random=57",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmi37DN0OHStICdWQcOmpa68VQ9UMDIiDODGRa-6J00olnDwwUH056Ap2r24vJDMsnNmk&usqp=CAU",
         price: "114",
         oldPrice: 144,
         rating: 4,
@@ -36,7 +36,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "now",
-        img: "https://picsum.photos/500/300?random=100",
+        img: "https://www.creativeparamita.com/wp-content/uploads/2023/05/Flesh-Eaters-Among-Us.jpg",
         price: "124",
         oldPrice: 150,
         rating: 4,
@@ -44,7 +44,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "way",
-        img: "https://picsum.photos/500/300?random=70",
+        img: "https://www.creativeparamita.com/wp-content/uploads/2023/10/Night-of-the-Living-Dread-442x705.jpg",
         price: "57",
         oldPrice: 167,
         rating: 5,
@@ -52,7 +52,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "customs",
-        img: "https://picsum.photos/500/300?random=33",
+        img: "https://i.pinimg.com/474x/c9/af/8d/c9af8d043890f449e31f8d7105ddc18a.jpg",
         price: "188",
         oldPrice: 129,
         rating: 4,
@@ -60,7 +60,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "huge",
-        img: "https://picsum.photos/500/300?random=33",
+        img: "https://thebookcoverdesigner.com/wp-content/uploads/2024/02/t-extinction-of-heavens-324x519.jpg",
         price: "156",
         oldPrice: 133,
         rating: 5,
@@ -68,7 +68,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "orange",
-        img: "https://picsum.photos/500/300?random=72",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrWuc4OoNt0cduwCuvt0rfs8Kxja3P9tY-GYLot22vl0rn69SmuwmwmfAmWY7GbVzu2IA&usqp=CAU",
         price: "143",
         oldPrice: 106,
         rating: 5,
@@ -76,7 +76,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "leave",
-        img: "https://picsum.photos/500/300?random=71",
+        img: "https://i.pinimg.com/736x/17/f2/99/17f299155513b393dc9ee7c865da97e1.jpg",
         price: "188",
         oldPrice: 101,
         rating: 4,
@@ -84,7 +84,7 @@ const homeBookOnSaleSlide = [
     },
     {
         title: "owner",
-        img: "https://picsum.photos/500/300?random=59",
+        img: "https://m.media-amazon.com/images/I/51BA6CTNqeL.jpg",
         price: "124",
         oldPrice: 112,
         rating: 5,

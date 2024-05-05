@@ -2,8 +2,7 @@ import { useDispatch } from "react-redux";
 import { authUncheck } from "../../utils/AuthCheckSlice";
 
 function ProfilePage() {
-
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     return (
         <div className="page-content bg-white">

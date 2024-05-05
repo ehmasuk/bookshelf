@@ -1,4 +1,10 @@
+import { useDispatch, useSelector } from "react-redux";
+import { removefromCart } from "../../utils/CartSlice";
 function CartPage() {
+    const { cartItems, totalAmount } = useSelector((store) => store.CartSlice);
+
+    const dispatch = useDispatch();
+
     return (
         <div className="page-content">
             {/* inner page banner */}
@@ -37,22 +43,39 @@ function CartPage() {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td className="product-item-img">
-                                                <img src="images/books/grid/book5.jpg" alt="" />
-                                            </td>
-                                            <td className="product-item-name">Take Out Tango</td>
-                                            <td className="product-item-price">$28.00</td>
-                                            <td className="product-item-quantity">
-                                                <div className="quantity btn-quantity style-1 me-3">
-                                                    <input id="demo_vertical7" type="text" defaultValue={1} name="demo_vertical2" />
-                                                </div>
-                                            </td>
-                                            <td className="product-item-totle">$28.00</td>
-                                            <td className="product-item-close">
-                                                <a href="#" className="ti-close" />
-                                            </td>
-                                        </tr>
+                                        {cartItems.length > 0 &&
+                                            cartItems.map((item, index) => {
+                                                return (
+                                                    <tr key={index}>
+                                                        <td className="product-item-img">
+                                                            <img src={item.img_src} alt="" />
+                                                        </td>
+                                                        <td className="product-item-name">{item.title}</td>
+                                                        <td className="product-item-price">{item.price}</td>
+                                                        <td className="product-item-quantity">
+                                                            <div className="quantity btn-quantity style-1 me-3">
+                                                                <input id="demo_vertical7" type="text" defaultValue={item.quantity} name="demo_vertical2" />
+                                                            </div>
+                                                        </td>
+                                                        <td className="product-item-totle">{item.price}</td>
+                                                        <td className="product-item-close">
+                                                            <a role="button" onClick={() => dispatch(removefromCart(item))} className="ti-close">
+                                                                ×
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                );
+                                            })}
+                                        {cartItems.length == 0 && (
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td className="text-center text-danger">Your cart is empty</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        )}
                                     </tbody>
                                 </table>
                             </div>

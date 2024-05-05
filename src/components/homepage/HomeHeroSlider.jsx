@@ -4,6 +4,8 @@ import { A11y, Autoplay, EffectFade, Navigation, Pagination, Scrollbar } from "s
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+import { FaRegStar, FaStar } from "react-icons/fa";
+import Rating from "react-rating";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
@@ -65,12 +67,12 @@ function HomeHeroSlider() {
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div className="partner">
+                                                {/* <div className="partner">
                                                     <p>Our partner</p>
                                                     <div className="brand-logo">
                                                         <img src="https://picsum.photos/100/55?random=53" alt="book" />
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="col-md-6">
@@ -123,12 +125,12 @@ function HomeHeroSlider() {
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div className="partner">
+                                                {/* <div className="partner">
                                                     <p>Our partner</p>
                                                     <div className="brand-logo">
                                                         <img src="https://picsum.photos/100/55?random=99" alt="book" />
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="col-md-6">
@@ -180,13 +182,7 @@ function HomeHeroSlider() {
                                     <div className="price">
                                         <span className="price-num">$5.7</span>
                                     </div>
-                                    <div className="rate">
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-muted" />
-                                    </div>
+                                    <Rating initialRating={4} readonly emptySymbol={<FaRegStar color="#FFA808" />} fullSymbol={<FaStar color="#FFA808" />} />
                                 </div>
                             </div>
                         </div>
@@ -207,13 +203,7 @@ function HomeHeroSlider() {
                                     <div className="price">
                                         <span className="price-num">$5.7</span>
                                     </div>
-                                    <div className="rate">
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-muted" />
-                                    </div>
+                                    <Rating initialRating={4} readonly emptySymbol={<FaRegStar color="#FFA808" />} fullSymbol={<FaStar color="#FFA808" />} />
                                 </div>
                             </div>
                         </div>
@@ -234,13 +224,7 @@ function HomeHeroSlider() {
                                     <div className="price">
                                         <span className="price-num">$5.7</span>
                                     </div>
-                                    <div className="rate">
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-yellow" />
-                                        <i className="flaticon-star text-muted" />
-                                    </div>
+                                    <Rating initialRating={4} readonly emptySymbol={<FaRegStar color="#FFA808" />} fullSymbol={<FaStar color="#FFA808" />} />
                                 </div>
                             </div>
                         </div>

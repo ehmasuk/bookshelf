@@ -14,9 +14,8 @@ function Homepage() {
                 <HomeHeroSlider />
                 {/*Swiper Banner End*/}
                 {/* Client Start*/}
-                <div className="bg-white py-5">
+                {/* <div className="bg-white py-5" style={{ height: "fit-content" }}>
                     <div className="container">
-                        {/*Client Swiper */}
                         <div className="swiper client-swiper">
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
@@ -37,10 +36,10 @@ function Homepage() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* Client End*/}
                 {/*Recommend Section Start*/}
-                <section className="content-inner-1 bg-grey reccomend">
+                <section className="content-inner-1 bg-grey reccomend" style={{ height: "fit-content" }}>
                     <div className="container">
                         <div className="section-head text-center">
                             <h2 className="title">Recomended For You</h2>
@@ -106,7 +105,7 @@ function Homepage() {
                 </section>
                 {/* icon-box1 End*/}
                 {/* Book Sale */}
-                <section className="content-inner-1">
+                <section className="content-inner-1" style={{ height: "fit-content" }}>
                     <div className="container">
                         <div className="section-head book-align">
                             <h2 className="title mb-0">Books on Sale</h2>
@@ -125,7 +124,7 @@ function Homepage() {
                 </section>
                 {/* Book Sale End */}
                 {/* Feature Product */}
-                <section className="content-inner-1 bg-grey reccomend">
+                <section className="content-inner-1 bg-grey reccomend" style={{height:'fit-content'}}>
                     <div className="container">
                         <div className="section-head text-center">
                             <div className="circle style-1" />
@@ -142,12 +141,12 @@ function Homepage() {
                 </section>
                 {/* Feature Product End */}
                 {/* Special Offer*/}
-                <section className="content-inner-2">
+                <section className="content-inner-2" style={{height:'fit-content'}}>
                     <HomeSpecialOfferSlider />
                 </section>
                 {/* Special Offer End */}
                 {/* Testimonial */}
-                <section className="content-inner-2 testimonial-wrapper">
+                <section className="content-inner-2 testimonial-wrapper" style={{height:'fit-content'}}>
                     <div className="container">
                         <div className="testimonial">
                             <div className="section-head book-align">
@@ -170,7 +169,7 @@ function Homepage() {
                 </section>
                 {/* Testimonial End */}
                 {/* Latest News */}
-                <section className="content-inner-2">
+                <section className="content-inner-2" style={{height:'fit-content'}}>
                     <div className="container">
                         <div className="section-head text-center">
                             <h2 className="title">Latest News</h2>
@@ -181,7 +180,7 @@ function Homepage() {
                 </section>
                 {/* Latest News End */}
                 {/* Feature Box */}
-                <section className="content-inner">
+                <section className="content-inner" >
                     <div className="container">
                         <div className="row sp15">
                             <div className="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.1s">

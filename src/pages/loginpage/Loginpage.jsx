@@ -23,8 +23,8 @@ function Loginpage() {
                 setUserInfo(userInfoDefault);
             })
             .catch((err) => {
-                console.log(err.message);
-                toast.error("Invalid email or password");
+                console.log(err);
+                toast.error(err.message);
             })
             .finally(() => {
                 setisLoading(null);
